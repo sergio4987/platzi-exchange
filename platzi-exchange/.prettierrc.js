@@ -1,5 +1,5 @@
 module.exports = {
-  tapWidth: 2,
-  semi: true,
+  tabWidth: 2,
+  semi: false,
   singleQuote: true
-};
+}

@@ -1,31 +1,27 @@
 <template>
   <main>
     <px-header />
-    <!-- <px-assets-table /> -->
+
     <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
   </main>
 </template>
 
 <script>
-import PxHeader from "@/components/PxHeader";
-// import PxAssetsTable from '@/components/PxAssetsTable'
+import PxHeader from '@/components/PxHeader'
 
 export default {
-  name: "App",
-  components: {
-    PxHeader
-    // PxAssetsTable,
-  }
-};
+  name: 'app',
+  components: { PxHeader }
+}
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0px;
+  margin-top: 60px;
 }
 </style>
