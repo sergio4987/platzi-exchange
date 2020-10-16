@@ -3,7 +3,7 @@ import App from './App.vue'
 import '@/assets/css/tailwind.css'
 
 import router from '@/router'
-import { dollarFilter,porcentFilter } from '../filters'
+import { dollarFilter, porcentFilter } from '../filters'
 
 Vue.filter('dollar', dollarFilter)
 Vue.filter('porcent', porcentFilter)
