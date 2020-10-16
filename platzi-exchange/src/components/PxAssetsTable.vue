@@ -48,7 +48,7 @@
               : 'text-green-600'
           "
         >
-          {{ a.changePercent24Hr | percent }}
+          {{ a.changePercent24Hr | porcent }}
         </td>
         <td class="hidden sm:block">
           <px-button @custom-click="goToCoin(a.id)">
@@ -61,12 +61,14 @@
 </template>
 
 <script>
-import PxButton from '@/components/PxButton'
+import PxButton from "@/components/PxButton"
 
 export default {
-  name: 'PxAssetsTable',
+  name: "PxAssetsTable",
 
-  components: { PxButton },
+  components: {
+    PxButton
+  },
 
   props: {
     assets: {
@@ -77,7 +79,12 @@ export default {
 
   methods: {
     goToCoin(id) {
-      this.$router.push({ name: 'coin-detail', params: { id } })
+      this.$router.push({
+        name: "coin-detail",
+        params: {
+          id
+        }
+      })
     }
   }
 }
@@ -85,11 +92,11 @@ export default {
 
 <style scoped>
 .up::before {
-  content: '👆';
+  content: "👆";
 }
 
 .down::before {
-  content: '👇';
+  content: "👇";
 }
 
 td {
