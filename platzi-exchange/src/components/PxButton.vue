@@ -11,6 +11,7 @@
 export default {
   name: 'PxButton',
 
+  props: {
   methods: {
     buttonClick() {
       this.$emit('custom-click')
